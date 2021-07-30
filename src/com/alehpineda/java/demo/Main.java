@@ -122,5 +122,35 @@ public class Main {
         System.out.println("String from y4 is "+y4.s);
         System.out.println("String from z4 is "+z4.s);
         System.out.println("\n");
+
+        // Singleton with lazy initialization
+        SingletonWithLazyInitialization x5 = SingletonWithLazyInitialization.getInstance();
+        SingletonWithLazyInitialization y5 = SingletonWithLazyInitialization.getInstance();
+        SingletonWithLazyInitialization z5 = SingletonWithLazyInitialization.getInstance();
+
+        System.out.println("String from x5 is "+x5.s);
+        System.out.println("String from y5 is "+y5.s);
+        System.out.println("String from z5 is "+z5.s);
+        System.out.println("\n");
+
+        // Upper case
+        // Changing variable of instance of x1
+        x5.s = (x5.s).toUpperCase();
+
+        // All will be uppercase
+        System.out.println("String from x5 is "+x5.s);
+        System.out.println("String from y5 is "+y5.s);
+        System.out.println("String from z5 is "+z5.s);
+        System.out.println("\n");
+
+        // Lower case
+        // Changing variable of instance of x1
+        x5.s = (x5.s).toLowerCase();
+
+        // All will be uppercase
+        System.out.println("String from x5 is "+x5.s);
+        System.out.println("String from y5 is "+y5.s);
+        System.out.println("String from z5 is "+z5.s);
+        System.out.println("\n");
     }
 }
