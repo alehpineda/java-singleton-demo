@@ -152,5 +152,35 @@ public class Main {
         System.out.println("String from y5 is "+y5.s);
         System.out.println("String from z5 is "+z5.s);
         System.out.println("\n");
+
+        // Singleton with thread safe
+        SingletonThreadSafe x6 = SingletonThreadSafe.getInstance();
+        SingletonThreadSafe y6 = SingletonThreadSafe.getInstance();
+        SingletonThreadSafe z6 = SingletonThreadSafe.getInstance();
+
+        System.out.println("String from x6 is "+x6.s);
+        System.out.println("String from y6 is "+y6.s);
+        System.out.println("String from z6 is "+z6.s);
+        System.out.println("\n");
+
+        // Upper case
+        // Changing variable of instance of x1
+        x6.s = (x6.s).toUpperCase();
+
+        // All will be uppercase
+        System.out.println("String from x6 is "+x6.s);
+        System.out.println("String from y6 is "+y6.s);
+        System.out.println("String from z6 is "+z6.s);
+        System.out.println("\n");
+
+        // Lower case
+        // Changing variable of instance of x1
+        x6.s = (x6.s).toLowerCase();
+
+        // All will be uppercase
+        System.out.println("String from x6 is "+x6.s);
+        System.out.println("String from y6 is "+y6.s);
+        System.out.println("String from z6 is "+z6.s);
+        System.out.println("\n");
     }
 }
