@@ -212,5 +212,35 @@ public class Main {
         System.out.println("String from y7 is "+y7.s);
         System.out.println("String from z7 is "+z7.s);
         System.out.println("\n");
+
+        // Singleton Bill Pugh
+        SingletonBillPugh x8 = SingletonBillPugh.getInstance();
+        SingletonBillPugh y8 = SingletonBillPugh.getInstance();
+        SingletonBillPugh z8 = SingletonBillPugh.getInstance();
+
+        System.out.println("String from x8 is "+x8.s);
+        System.out.println("String from y8 is "+y8.s);
+        System.out.println("String from z8 is "+z8.s);
+        System.out.println("\n");
+
+        // Upper case
+        // Changing variable of instance of x1
+        x8.s = (x8.s).toUpperCase();
+
+        // All will be uppercase
+        System.out.println("String from x8 is "+x8.s);
+        System.out.println("String from y8 is "+y8.s);
+        System.out.println("String from z8 is "+z8.s);
+        System.out.println("\n");
+
+        // Lower case
+        // Changing variable of instance of x1
+        x8.s = (x8.s).toLowerCase();
+
+        // All will be uppercase
+        System.out.println("String from x8 is "+x8.s);
+        System.out.println("String from y8 is "+y8.s);
+        System.out.println("String from z8 is "+z8.s);
+        System.out.println("\n");
     }
 }
