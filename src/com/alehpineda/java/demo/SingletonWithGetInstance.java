@@ -1,27 +1,27 @@
 package com.alehpineda.java.demo;
 
-// Java program implementing Singleton class
+// Java program implementing SingletonWithGetInstance class
 // with getInstance() method
-public class Singleton {
+public class SingletonWithGetInstance {
 
     // static variable single_instance of type singleton
     // private means only used inside the class
     // static means associated with the type itself
-    private static Singleton single_instance = null;
+    private static SingletonWithGetInstance single_instance = null;
 
     // variable of type string
     // public means can be used from outside the class
     public String s;
 
     // private constructor restricted to this class itself
-    private Singleton(){
+    private SingletonWithGetInstance(){
         s = "Hello world from a singleton class";
     }
 
-    // static method to create instance of Singleton class
-    public static Singleton getInstance(){
+    // static method to create instance of SingletonWithGetInstance class
+    public static SingletonWithGetInstance getInstance(){
         if(single_instance == null){
-            single_instance = new Singleton();
+            single_instance = new SingletonWithGetInstance();
         }
         return single_instance;
     }
