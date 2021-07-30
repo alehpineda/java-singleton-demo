@@ -62,5 +62,35 @@ public class Main {
         System.out.println("String from y2 is "+y2.s);
         System.out.println("String from z2 is "+z2.s);
         System.out.println("\n");
+
+        // Singleton with eager initialization
+        SingletonEagerInitialization x3 = SingletonEagerInitialization.getInstance();
+        SingletonEagerInitialization y3 = SingletonEagerInitialization.getInstance();
+        SingletonEagerInitialization z3 = SingletonEagerInitialization.getInstance();
+
+        System.out.println("String from x3 is "+x3.s);
+        System.out.println("String from y3 is "+y3.s);
+        System.out.println("String from z3 is "+z3.s);
+        System.out.println("\n");
+
+        // Upper case
+        // Changing variable of instance of x1
+        x3.s = (x3.s).toUpperCase();
+
+        // All will be uppercase
+        System.out.println("String from x3 is "+x3.s);
+        System.out.println("String from y3 is "+y3.s);
+        System.out.println("String from z3 is "+z3.s);
+        System.out.println("\n");
+
+        // Lower case
+        // Changing variable of instance of x1
+        x3.s = (x3.s).toLowerCase();
+
+        // All will be uppercase
+        System.out.println("String from x3 is "+x3.s);
+        System.out.println("String from y3 is "+y3.s);
+        System.out.println("String from z3 is "+z3.s);
+        System.out.println("\n");
     }
 }
