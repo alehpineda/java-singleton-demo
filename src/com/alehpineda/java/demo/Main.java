@@ -182,5 +182,35 @@ public class Main {
         System.out.println("String from y6 is "+y6.s);
         System.out.println("String from z6 is "+z6.s);
         System.out.println("\n");
+
+        // Singleton with double lock
+        SingletonDoubleCheck x7 = SingletonDoubleCheck.getInstance();
+        SingletonDoubleCheck y7 = SingletonDoubleCheck.getInstance();
+        SingletonDoubleCheck z7 = SingletonDoubleCheck.getInstance();
+
+        System.out.println("String from x7 is "+x7.s);
+        System.out.println("String from y7 is "+y7.s);
+        System.out.println("String from z7 is "+z7.s);
+        System.out.println("\n");
+
+        // Upper case
+        // Changing variable of instance of x1
+        x7.s = (x7.s).toUpperCase();
+
+        // All will be uppercase
+        System.out.println("String from x7 is "+x7.s);
+        System.out.println("String from y7 is "+y7.s);
+        System.out.println("String from z7 is "+z7.s);
+        System.out.println("\n");
+
+        // Lower case
+        // Changing variable of instance of x1
+        x7.s = (x7.s).toLowerCase();
+
+        // All will be uppercase
+        System.out.println("String from x7 is "+x7.s);
+        System.out.println("String from y7 is "+y7.s);
+        System.out.println("String from z7 is "+z7.s);
+        System.out.println("\n");
     }
 }

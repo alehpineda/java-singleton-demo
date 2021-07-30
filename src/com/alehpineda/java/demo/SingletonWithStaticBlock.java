@@ -7,7 +7,7 @@ public class SingletonWithStaticBlock {
     public static SingletonWithStaticBlock instance;
 
     // Public String variable
-    String s;
+    public String s;
     // private constructor
     private SingletonWithStaticBlock(){
         s = "Hello world from a Singleton with Static Block";

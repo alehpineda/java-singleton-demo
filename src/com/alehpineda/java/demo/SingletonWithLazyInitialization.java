@@ -8,7 +8,7 @@ public class SingletonWithLazyInitialization {
     private static SingletonWithLazyInitialization instance;
 
     // Public string
-    String s;
+    public String s;
 
     // private constructor
     private SingletonWithLazyInitialization(){

@@ -8,7 +8,7 @@ public class SingletonThreadSafe {
     private static SingletonThreadSafe instance;
 
     // public string
-    String s;
+    public String s;
 
     // private constructor
     private SingletonThreadSafe(){
